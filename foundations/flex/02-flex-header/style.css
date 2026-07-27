@@ -1,6 +1,20 @@
-.header  {
+.header {
   font-family: monospace;
   background: papayawhip;
+}
+
+ul {
+  /* this removes the dots on the list items*/
+  list-style-type: none;
+  
+}
+
+a {
+  font-size: 22px;
+  background: white;
+  padding: 8px;
+  /* this removes the line under the links */
+  text-decoration: none;
 }
 
 .logo {
@@ -11,15 +25,29 @@
   padding: 4px 32px;
 }
 
-ul {
-  /* this removes the dots on the list items*/
-  list-style-type: none;
+/*
+    display: flex | inline-flex;
+    flex-direction: row | row-reverse | column | column-reverse;
+    flex-wrap: nowrap | wrap | wrap-reverse;
+    flex-flow: column wrap;
+    justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe;
+    align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe;
+    align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe;
+    gap: 10px;
+    gap: 10px 20px; row-gap column gap
+    row-gap: 10px;
+    column-gap: 20px;
+  */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
 }
 
-a {
-  font-size: 22px;
-  background: white;
-  padding: 8px;
-  /* this removes the line under the links */
-  text-decoration: none;
+ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 1em;
 }
