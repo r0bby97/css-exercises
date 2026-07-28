@@ -46,3 +46,50 @@ a {
 ul {
   list-style-type: none;
 }
+
+
+
+/* 
+  // Container
+  display: flex | inline-flex;
+  flex-direction: row | row-reverse | column | column-reverse;
+  flex-wrap: nowrap | wrap | wrap-reverse;
+  flex-flow: column wrap;
+  justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe;
+  align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe;
+  align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe;
+  gap: 10px;
+  gap: 10px 20px; row-gap column gap
+  row-gap: 10px;
+  column-gap: 20px; 
+
+  // Element
+  order: 5; default is 0
+  flex-grow: 4; default 0
+  flex-shrink: 3; default 1
+  flex-basis: 100px | auto; default auto
+  flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+  align-self: auto | flex-start | flex-end | center | baseline | stretch; 
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.container-left,
+.container-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+ul {
+  display: flex;
+  gap: 16px;
+}
